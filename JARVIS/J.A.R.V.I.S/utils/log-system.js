@@ -1,1 +1,0 @@
-// Logs em tempo real

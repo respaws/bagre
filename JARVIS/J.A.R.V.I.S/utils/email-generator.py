@@ -1,1 +1,0 @@
-# Gera e-mails temporários
