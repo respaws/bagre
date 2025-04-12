@@ -1,0 +1,5 @@
+
+flask
+selenium
+undetected-chromedriver
+fake-useragent
