@@ -1,4 +1,11 @@
-
+# This file is used to install the required packages for the project
+# You can install the packages using the following command:
+# pip install -r requirements.txt
+# Make sure to use a virtual environment to avoid conflicts with other projects
+# You can create a virtual environment using the following command:
+# python -m venv venv
+# Activate the virtual environment using the following command:
+# Windows: venv\Scripts\activate
 flask
 selenium
 undetected-chromedriver
