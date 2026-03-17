@@ -30,6 +30,23 @@ Acesse no navegador:
 - http://localhost:5004 (bagre4 / 91980514xx)
 - http://localhost:5005 (bagre5 / 91980514xx)
 
+
+## Automação (somente para testes locais)
+Para cenários de automação e carga local, cada app agora suporta múltiplas contas via banco SQLite:
+
+```env
+AUTOMATION_KEY=minha-chave-forte
+EXTRA_USERS=user1:senha1,user2:senha2
+```
+
+Endpoints (requer header `X-Automation-Key`):
+- `POST /api/automation/create-users`
+  - body exemplo: `{"count": 100, "prefix": "batch", "password": "123456"}`
+- `POST /api/automation/generate-views`
+  - body exemplo: `{"users": ["batch_x1","batch_x2"], "video_id": "video_1", "views_per_user": 3, "seconds": 8}`
+
+> Esses endpoints registram eventos **locais** no SQLite para validar fluxo de automação.
+
 ## Proxies
 Em cada pasta, edite o arquivo `.env` e configure:
 ```env
